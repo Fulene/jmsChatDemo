@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
+    <output url="file://$MODULE_DIR$/../../JmsChat/build/classes/java/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../JmsChat/build/generated/sources/annotationProcessor/java/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../JmsChat/build/generated/sources/annotationProcessor/java/main" isTestSource="false" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../JmsChat/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../JmsChat/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../JmsChat/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.projectlombok:lombok:1.18.22" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-activemq:2.5.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-data-rest:2.5.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-web:2.5.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter:2.5.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-jms:5.3.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.activemq:activemq-broker:5.16.3" level="project" />
+    <orderEntry type="library" name="Gradle: jakarta.jms:jakarta.jms-api:2.0.3" level="project" />
+    <orderEntry type="library" name="Gradle: jakarta.management.j2ee:jakarta.management.j2ee-api:1.1.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.data:spring-data-rest-webmvc:3.5.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-json:2.5.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-tomcat:2.5.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-webmvc:5.3.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-web:5.3.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-autoconfigure:2.5.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot:2.5.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-logging:2.5.6" level="project" />
+    <orderEntry type="library" name="Gradle: jakarta.annotation:jakarta.annotation-api:1.3.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-core:5.3.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.yaml:snakeyaml:1.28" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-messaging:5.3.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-tx:5.3.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-beans:5.3.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.activemq:activemq-openwire-legacy:5.16.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.activemq:activemq-client:5.16.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.12.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.data:spring-data-rest-core:3.5.6" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.12.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.32" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.12.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.module:jackson-module-parameter-names:2.12.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.12.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.54" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.54" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.tomcat.embed:tomcat-embed-el:9.0.54" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-context:5.3.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-aop:5.3.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-expression:5.3.12" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-classic:1.2.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-to-slf4j:2.14.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:jul-to-slf4j:1.7.32" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-jcl:5.3.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.fusesource.hawtbuf:hawtbuf:1.11" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.12.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.hateoas:spring-hateoas:1.3.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.plugin:spring-plugin-core:2.0.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.data:spring-data-commons:2.5.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.atteo:evo-inflector:1.2.2" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-core:1.2.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-api:2.14.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.jayway.jsonpath:json-path:2.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: net.minidev:json-smart:2.4.7" level="project" />
+    <orderEntry type="library" name="Gradle: net.minidev:accessors-smart:2.4.7" level="project" />
+    <orderEntry type="library" name="Gradle: org.ow2.asm:asm:9.1" level="project" />
+  </component>
+</module>
