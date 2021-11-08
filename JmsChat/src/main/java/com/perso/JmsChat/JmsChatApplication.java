@@ -1,18 +1,16 @@
 package com.perso.JmsChat;
 
-import org.springframework.boot.CommandLineRunner;
+import javafx.application.Application;
+import javafx.stage.Stage;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JmsChatApplication implements CommandLineRunner {
+public class JmsChatApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(JmsChatApplication.class, args);
+		Application.launch(UiChatApplication.class, args);
 	}
 
-	@Override
-	public void run(String... args) throws Exception {
-		System.out.println("test");
-	}
 }
