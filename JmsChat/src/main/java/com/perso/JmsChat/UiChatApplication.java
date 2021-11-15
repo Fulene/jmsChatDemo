@@ -13,16 +13,11 @@ import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.jms.core.JmsTemplate;
 
 @Slf4j
 public class UiChatApplication extends Application {
-
-    @Autowired
-    private JmsTemplate jmsTemplate;
 
     private ConfigurableApplicationContext applicationContext;
     private ChatService chatService;
@@ -45,11 +40,15 @@ public class UiChatApplication extends Application {
         hBox.setSpacing(10);
         hBox.setBackground(new Background(new BackgroundFill(Color.GREEN, CornerRadii.EMPTY, Insets.EMPTY)));
 
-        Label codeLabel = new Label("Code du destinataire :");
+        Label codeLabel = new Label("Mon code :");
         codeLabel.setTextFill(Color.WHITE);
         codeLabel.setPadding(new Insets(3));
-        TextField codeTextField = new TextField("C1");
-        codeTextField.setPromptText("Code");
+        TextField codeTextField = new TextField("");
+
+        Label codeRecipientLabel = new Label("Code du destinataire :");
+        codeRecipientLabel.setTextFill(Color.WHITE);
+        codeRecipientLabel.setPadding(new Insets(3));
+        TextField codeRecipientTextField = new TextField("");
 
         Label messageLabel = new Label("message :");
         messageLabel.setTextFill(Color.WHITE);
@@ -60,9 +59,13 @@ public class UiChatApplication extends Application {
         messageTextField.setPrefColumnCount(20);
 
         Button sendBtn = new Button("Envoyer");
+        Button validateCodeBtn = new Button("Valider");
 
         hBox.getChildren().add(codeLabel);
         hBox.getChildren().add(codeTextField);
+        hBox.getChildren().add(validateCodeBtn);
+        hBox.getChildren().add(codeRecipientLabel);
+        hBox.getChildren().add(codeRecipientTextField);
         hBox.getChildren().add(messageLabel);
         hBox.getChildren().add(messageTextField);
         hBox.getChildren().add(sendBtn);
@@ -76,12 +79,16 @@ public class UiChatApplication extends Application {
         borderPane.setTop(hBox);
         borderPane.setCenter(hBox2);
 
-        Scene scene = new Scene(borderPane, 800, 200);
+        Scene scene = new Scene(borderPane, 1000, 250);
         primaryStage.setScene(scene);
         primaryStage.show();
 
+        validateCodeBtn.setOnAction(event -> {
+            chatService.setPersonalCode(codeTextField.getText());
+        });
+
         sendBtn.setOnAction(event -> {
-            Message message = new Message(codeTextField.getText(), messageTextField.getText());
+            Message message = new Message(codeTextField.getText(), codeRecipientTextField.getText(), messageTextField.getText());
             chatService.sendMessage(message);
             messageTextField.setText("");
         });

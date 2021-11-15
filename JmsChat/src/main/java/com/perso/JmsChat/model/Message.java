@@ -8,9 +8,10 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class Message implements Serializable {
     private String source;
+    private String recipient;
     private String message;
 
     public String toString() {
-        return source + " : " + message;
+        return "[Source : " + source + ", Dest : " + recipient + ", Message : " + message + "]";
     }
 }
